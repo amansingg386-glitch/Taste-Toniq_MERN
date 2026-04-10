@@ -28,9 +28,7 @@ app.use('/api', limiter);
 
 // middleware
 app.use(express.json());
-app.use(cors({
-    origin: "https://taste-toniq-mern-frontend.onrender.com", 
-}));
+app.use(cors());
 
 // db connection
 connectDB();
