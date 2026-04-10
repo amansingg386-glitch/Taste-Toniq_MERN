@@ -1,0 +1,99 @@
+.varieties-page {
+    padding: 0px 0px 80px 0px;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.varieties-hero {
+    background: linear-gradient(135deg, #ff8c00 0%, #fb6900 100%);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.varieties-hero h1 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.varieties-hero p {
+    font-size: 16px;
+    color: #cbd5e1;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.varieties-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 50px;
+    position: sticky;
+    top: 20px;
+    z-index: 100;
+}
+
+.region-pill {
+    padding: 12px 24px;
+    background: white;
+    color: #475569;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border: 1px solid #f1f5f9;
+    transition: all 0.3s ease;
+}
+
+.region-pill:hover {
+    background: tomato;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 99, 71, 0.2);
+}
+
+.region-section {
+    margin-bottom: 60px;
+    scroll-margin-top: 100px;
+}
+
+.region-title {
+    font-size: 32px;
+    font-weight: 800;
+    color: #1e293b;
+    margin-bottom: 25px;
+    border-bottom: 3px solid tomato;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+/* Inheriting FoodDisplay styling logic */
+.food-display-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 30px;
+    row-gap: 50px;
+}
+
+.empty-regions {
+    text-align: center;
+    padding: 80px 20px;
+    background: #f8fafc;
+    border-radius: 20px;
+    border: 2px dashed #cbd5e1;
+}
+
+.empty-regions h2 {
+    color: #475569;
+    margin-bottom: 10px;
+}
+
+.empty-regions p {
+    color: #94a3b8;
+}
