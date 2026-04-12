@@ -1,8 +1,15 @@
-.navbar{
+.navbar {
     padding: 20px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
 }
 .navbar .logo{
     width: 180px;
@@ -36,11 +43,39 @@
 
 .navbar button:hover{
     background-color: #ff5e00;
+    color: white;
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 4px 10px rgba(255, 94, 0, 0.3);
 }
 
-.navbar .active{
-    padding-bottom: 2px;
-    border-bottom: 2px solid #49557e ;
+.navbar-menu a {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: tomato;
+    transition: width 0.3s ease;
+}
+
+.navbar-menu a:hover::after,
+.navbar .active::after {
+    width: 100%;
+    left: 0;
+    background: tomato;
+}
+
+.navbar .active {
+    color: tomato;
 }
 
 .navbar li{
