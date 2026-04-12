@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+:root {
+  --primary-color: #ff4b2b;
+  --primary-vibrant: #ff416c;
+  --sunset-gradient: linear-gradient(135deg, #ff416c, #ff4b2b);
+  --warm-glow: rgba(255, 75, 43, 0.25);
+  --dark-text: #2c2c2c;
+  --gray-text: #676767;
+}
+
 *{
   padding: 0;
   margin:0;
@@ -8,6 +17,7 @@
 }
 body{
   min-height: 100vh;
+  color: var(--dark-text);
 }
 a{
   text-decoration: none;

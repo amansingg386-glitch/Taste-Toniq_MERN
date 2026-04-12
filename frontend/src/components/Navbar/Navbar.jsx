@@ -32,9 +32,9 @@ const Navbar = ({setShowLogin}) => {
         <div className="navbar-right">
             {!isAdmin ? (
                 <>
-                    <div style={{display:'flex', alignItems: 'center', gap:'10px', border:'1px solid #ccc', padding:'2px 10px', borderRadius:'50px'}}>
-                        <img src={assets.search_icon} alt="" style={{width:'20px'}}/>
-                        <input type="text" placeholder="Search..." value={searchQuery} onChange={(e)=>setSearchQuery(e.target.value)} style={{border:'none', outline:'none', background:'transparent', width:'150px'}} />
+                    <div className="navbar-search-bar">
+                        <img src={assets.search_icon} alt="search" className="search-icon" />
+                        <input type="text" placeholder="Search delicious food..." value={searchQuery} onChange={(e)=>setSearchQuery(e.target.value)} className="search-input" />
                     </div>
                     <div className="navbar-search-icon">
                         <Link to='/cart'><img src={assets.basket_icon} alt="" /></Link>
