@@ -6,7 +6,7 @@ export const StoreContext=createContext(null)
 const StoreContextProvider = (props)=>{
 
    const [cartItems,setCartItems]=useState({});
-   const url = "https://taste-toniq-mern-backendd.onrender.com";
+   const url = import.meta.env.VITE_BACKEND_URL || "http://localhost:4000";
    const [token,setToken] = useState("");
    const [food_list,setFoodList] = useState([]);
    const [searchQuery, setSearchQuery] = useState("");
