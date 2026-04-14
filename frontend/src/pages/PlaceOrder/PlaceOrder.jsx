@@ -170,7 +170,7 @@ const PlaceOrder = () => {
 
         let orderData = {
             items: orderItems,
-            amount: getTotalCartAmount() + 2,
+            amount: getTotalCartAmount() + 39,
             address: { ...data, phone: `${data.countryCode} ${data.phone}` },
             paymentMethod: paymentMethod
         }
@@ -204,7 +204,7 @@ const PlaceOrder = () => {
                 </div>
 
                 <form onSubmit={handlePayment} className='payment-form'>
-                    <p className='amount-display'>Amount to pay: <span>₹ {getTotalCartAmount() + 2}</span></p>
+                    <p className='amount-display'>Amount to pay: <span>₹ {getTotalCartAmount() + 39}</span></p>
 
                     {paymentMethod === 'card' && (
                         <div className="method-details slide-in">
@@ -356,12 +356,12 @@ const PlaceOrder = () => {
                         <hr />
                         <div className="cart-total-details">
                             <p>Delivery Fee</p>
-                            <p>₹ {getTotalCartAmount() === 0 ? 0 : 2}</p>
+                            <p>₹ {getTotalCartAmount() === 0 ? 0 : 39}</p>
                         </div>
                         <hr />
                         <div className="cart-total-details">
                             <b>Total</b>
-                            <b>₹ {getTotalCartAmount() === 0 ? 0 : getTotalCartAmount() + 2}</b>
+                            <b>₹ {getTotalCartAmount() === 0 ? 0 : getTotalCartAmount() + 39}</b>
                         </div>
                     </div>
                     <button type='submit' disabled={isVerifyingLocation}>
